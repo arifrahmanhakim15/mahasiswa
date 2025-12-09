@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nama": "Smartphone X1 Ultra",
+        "harga": 5999000,
+        "kategori": "smartphone",
+        "img": "img/smartphone1.jpg",
+        "deskripsi": "Smartphone futuristik dengan layar AMOLED dan AI Turbo Boost."
+    },
+    {
+        "id": 2,
+        "nama": "Laptop TitanPro 15",
+        "harga": 12999000,
+        "kategori": "laptop",
+        "img": "img/laptop1.jpg",
+        "deskripsi": "Laptop performa tinggi dengan prosesor terbaru dan RGB neon."
+    },
+    {
+        "id": 3,
+        "nama": "Headset Quantum Bass",
+        "harga": 799000,
+        "kategori": "audio",
+        "img": "img/audio1.jpg",
+        "deskripsi": "Headset futuristik dengan bass dalam dan ambient lighting."
+    },
+    {
+        "id": 4,
+        "nama": "Mouse Gaming Orion",
+        "harga": 299000,
+        "kategori": "aksesoris",
+        "img": "img/mouse1.jpg",
+        "deskripsi": "Mouse gaming presisi tinggi dengan neon blue glow."
+    }
+]
