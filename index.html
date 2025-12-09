@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KIMStore – Toko Elektronik</title>
+
+    <!-- SEO -->
+    <meta name="description" content="KIMStore - Toko elektronik.">
+    <meta property="og:title" content="KIMStore">
+    <meta property="og:description" content="Toko elektronik.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar glass">
+        <div class="logo">KIMStore</div>
+        <ul class="nav-links">
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li class="cart-icon">
+                <a href="cart.html">🛒 <span id="cartCount">0</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1 class="glitch">Selamat Datang di KIMStore</h1>
+        <p class="subtitle">JANGAN SAMPAI KEHABISAN!!</p>
+        <button class="btn-glow" onclick="scrollToProduk()">Lihat Produk</button>
+    </header>
+
+    <!-- PRODUK -->
+        <div id="skeleton-wrapper" class="product-grid">
+            <div class="skeleton skeleton-card"></div>
+            <div class="skeleton skeleton-card"></div>
+            <div class="skeleton skeleton-card"></div>
+            <div class="skeleton skeleton-card"></div>
+            <div class="skeleton skeleton-card"></div>
+            <div class="skeleton skeleton-card"></div>
+        </div>
+
+        <div id="product-list" class="product-grid"></div>
+
+
+    <section id="produk" class="produk-section">
+        <h2 class="title-section">Produk Pilihan</h2>
+
+        <!-- Search & Filter -->
+        <div class="filter-bar glass">
+            <input type="text" id="searchInput" placeholder="Cari produk..." />
+            <select id="sortSelect">
+                <option value="">Urutkan</option>
+                <option value="low">Harga Terendah</option>
+                <option value="high">Harga Tertinggi</option>
+            </select>
+            <select id="catSelect">
+                <option value="">Semua Kategori</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="laptop">Laptop</option>
+                <option value="audio">Audio</option>
+                <option value="aksesoris">Aksesoris</option>
+            </select>
+        </div>
+
+        <div class="produk-container" id="produkContainer"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+        <p>© 2025 KIMStore | Dibuat oleh <b>Arif Rahman Hakim</b></p>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/productService.js"></script>
+    <script src="js/uiRenderer.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

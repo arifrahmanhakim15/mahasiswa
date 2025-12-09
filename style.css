@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0f19;
+    color: #e2e8f0;
+}
+
+/* GLASS EFFECT */
+.glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.cart-icon span {
+    background: #00aaff;
+    padding: 3px 7px;
+    border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #001a33, #000);
+}
+
+.glitch {
+    font-size: 3rem;
+    text-shadow: 0 0 8px #00aaff;
+}
+
+/* BUTTON GLOW */
+.btn-glow {
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    background: #00aaff;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 12px #0099dd;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 20px #00bbff;
+}
+
+/* PRODUK GRID */
+.produk-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 20px;
+}
+
+.card {
+    background: #111827;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,150,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,150,255,0.4);
+}
+
+/* DETAIL PAGE */
+.detail-card {
+    display: flex;
+    gap: 25px;
+    margin: 40px;
+    padding: 25px;
+}
+
+.detail-img {
+    width: 350px;
+    border-radius: 12px;
+}
+
+.price {
+    font-size: 1.4rem;
+    color: #00aaff;
+}
